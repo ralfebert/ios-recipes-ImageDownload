@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WCU-Dh-pBz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cS3-Vl-s1I">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fruit-->
+        <!--Fruit / SDWebImage-->
         <scene sceneID="Bcm-EB-cGS">
             <objects>
-                <tableViewController id="04K-Gt-WUN" customClass="FruitsViewController" customModule="ImageDownload" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="04K-Gt-WUN" customClass="FruitsViewControllerSDWebImage" customModule="ImageDownload" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="127" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Yue-RC-DRk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Hb-7w-4uK">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Hb-7w-4uK">
                                             <rect key="frame" x="259" y="11" width="100" height="100"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="100" id="dUt-3q-ywv"/>
@@ -59,16 +59,17 @@
                             <outlet property="delegate" destination="04K-Gt-WUN" id="5Tn-mv-RJT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Fruit" id="Edh-Wf-uPv"/>
+                    <navigationItem key="navigationItem" title="Fruit / SDWebImage" id="Edh-Wf-uPv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddg-4u-EtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="-197"/>
+            <point key="canvasLocation" x="1480.8" y="-197.45127436281859"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--SDWebImage-->
         <scene sceneID="5aZ-lV-Nx0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WCU-Dh-pBz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SDWebImage" id="xLi-G5-cNW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z1I-ti-W95">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -81,7 +82,99 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ld-aQ-d8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="-197.00149925037482"/>
+            <point key="canvasLocation" x="756" y="-197.45127436281859"/>
+        </scene>
+        <!--Fruit / Kingfisher-->
+        <scene sceneID="jAZ-Oz-Vcw">
+            <objects>
+                <tableViewController id="xrh-T5-7R2" customClass="FruitsViewControllerKingfisher" customModule="ImageDownload" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="127" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KSs-7W-Q2z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FruitCell" rowHeight="127" id="lAH-7Q-h44" customClass="FruitCell" customModule="ImageDownload" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="127"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lAH-7Q-h44" id="Esm-sX-6xu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="126.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmI-iM-hnU">
+                                            <rect key="frame" x="16" y="53" width="233" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nmF-Gs-o1z">
+                                            <rect key="frame" x="259" y="11" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="s9Y-iD-3xt"/>
+                                                <constraint firstAttribute="height" constant="100" id="xeb-Z0-ZNr"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nmF-Gs-o1z" firstAttribute="top" secondItem="Esm-sX-6xu" secondAttribute="topMargin" id="MO8-Tt-RCL"/>
+                                        <constraint firstItem="nmF-Gs-o1z" firstAttribute="leading" secondItem="UmI-iM-hnU" secondAttribute="trailing" constant="10" id="UPH-O1-HZG"/>
+                                        <constraint firstItem="UmI-iM-hnU" firstAttribute="leading" secondItem="Esm-sX-6xu" secondAttribute="leadingMargin" id="b8W-aF-E1j"/>
+                                        <constraint firstItem="UmI-iM-hnU" firstAttribute="centerY" secondItem="Esm-sX-6xu" secondAttribute="centerY" id="fDw-tV-xB9"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nmF-Gs-o1z" secondAttribute="trailing" id="yO2-IF-UvN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fruitImage" destination="nmF-Gs-o1z" id="r4l-yk-ZgG"/>
+                                    <outlet property="fruitLabel" destination="UmI-iM-hnU" id="Ceg-4p-1ZV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xrh-T5-7R2" id="GB4-iw-ffr"/>
+                            <outlet property="delegate" destination="xrh-T5-7R2" id="Krb-vH-8NR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Fruit / Kingfisher" id="fa9-oa-k0c"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HiS-Mt-pTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480.8" y="517.6911544227886"/>
+        </scene>
+        <!--Kingfisher-->
+        <scene sceneID="OnF-pD-lYF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ize-kz-1Sh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Kingfisher" id="Ula-Po-uSJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="35E-Gu-vaP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xrh-T5-7R2" kind="relationship" relationship="rootViewController" id="Cq2-Bm-2QE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iHK-zm-rLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="517.6911544227886"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="y14-zo-Qhj">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cS3-Vl-s1I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zHo-Z7-Vd8">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WCU-Dh-pBz" kind="relationship" relationship="viewControllers" id="S3u-PZ-Ln9"/>
+                        <segue destination="Ize-kz-1Sh" kind="relationship" relationship="viewControllers" id="S0i-Ef-cgy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3b-Hh-AnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="165"/>
         </scene>
     </scenes>
 </document>
