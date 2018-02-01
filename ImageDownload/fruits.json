@@ -1,0 +1,18 @@
+[
+    {
+        "genus": "Malus",
+        "title": "Apple"
+    },
+    {
+        "genus": "Musa",
+        "title": "Banana"
+    },
+    {
+        "genus": "Citrus",
+        "title": "Orange"
+    },
+    {
+        "genus": "Pyrus",
+        "title": "Pear"
+    }
+]
