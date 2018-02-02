@@ -6,7 +6,7 @@ target 'ImageDownload' do
   use_frameworks!
 
   # Pods for ImageDownload
-  pod 'SDWebImage', '~> 4.0'
-  pod 'Kingfisher', '~> 4.0'
+  pod 'SDWebImage/WebP'
+  pod 'KingfisherWebP'
 
 end

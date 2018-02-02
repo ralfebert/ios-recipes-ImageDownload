@@ -1,5 +1,6 @@
 import UIKit
 import Kingfisher
+import KingfisherWebP
 
 class FruitsViewControllerKingfisher: UITableViewController {
 
@@ -15,7 +16,7 @@ class FruitsViewControllerKingfisher: UITableViewController {
         
         cell.fruitLabel.text = fruit.title
         cell.fruitImage.kf.indicatorType = .activity
-        cell.fruitImage.kf.setImage(with: fruit.image, placeholder: #imageLiteral(resourceName: "placeholder"))
+        cell.fruitImage.kf.setImage(with: fruit.image, placeholder: #imageLiteral(resourceName: "placeholder"), options: [.processor(WebPProcessor.default), .cacheSerializer(WebPSerializer.default)])
         
         return cell
     }

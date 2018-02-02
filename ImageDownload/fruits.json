@@ -1,26 +1,24 @@
 [
-    {
-        "title": "Apple",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"
-    },
-    {
-        "title": "Banana",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Cavendish_Banana_DS.jpg"
-    },
-    {
-        "title": "Orange",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Orange_Fruit_Close-up.jpg"
-    },
-    {
-        "title": "Pear",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Rocha_Pear_2017_C3.jpg"
-    },
-    {
-        "title": "Kiwi",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Kiwi_aka.jpg"
-    },
-    {
-        "title": "Ananas",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Ananas~May_2008-1.jpg"
-    }
-]
+ {
+ "title": "Apple",
+ "image": "https://www.gstatic.com/webp/gallery3/1_webp_a.webp"
+ },
+ {
+ "title": "Apple",
+ "image": "https://www.gstatic.com/webp/gallery3/2_webp_ll.webp"
+ },
+ {
+ "title": "Banana",
+ "image": "https://www.gstatic.com/webp/gallery3/3_webp_ll.webp"
+ },
+ {
+ "title": "Orange",
+ "image": "https://www.gstatic.com/webp/gallery3/4_webp_ll.webp"
+ },
+ {
+ "title": "Pear",
+ "image": "https://www.gstatic.com/webp/gallery3/5_webp_ll.webp"
+ }
+ ]
+ 
+
