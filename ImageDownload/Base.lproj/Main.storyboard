@@ -62,27 +62,5 @@
             </objects>
             <point key="canvasLocation" x="1480.8" y="-197.45127436281859"/>
         </scene>
-        <!--SDWebImage-->
-        <scene sceneID="5aZ-lV-Nx0">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WCU-Dh-pBz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="SDWebImage" image="image" id="xLi-G5-cNW"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z1I-ti-W95">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="04K-Gt-WUN" kind="relationship" relationship="rootViewController" id="1u8-Kf-huy"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1ld-aQ-d8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="756" y="-197.45127436281859"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="image" width="26" height="20"/>
-    </resources>
 </document>
